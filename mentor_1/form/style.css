@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,500;1,600&display=swap");
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #333;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.wrapper{
+    width: 500px;
+    background-color: #fff;
+    padding: 40px;
+
+}
+
+.btn{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.btn button{
+    margin-top: 10px;
+padding: 15px;
+outline: none;
+background-color: #fff;
+border-radius: 7px;
+border: 1px solid #333;
+color:#8a33fd;
+}
+
+
+.horizontal{
+    position: relative;
+    top: 0;
+    margin: 30px 0 ;
+    border-top: 1px solid #dedede;
+    display: block;
+}
+
+
+.or{
+    position: absolute;
+    top: 0;
+    left: 45%;
+    top: -15px;
+    width: 30px ;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #fff;
+
+}
+
+
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+label{
+    font-size: 14px;
+}
+
+form input{
+    outline: none;
+    padding: 10px;
+    border-radius: 7px;
+    border: 1px solid #333;
+    
+}
+.password{
+    display: flex;
+    justify-content: space-between;
+}
+.link{
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+a{
+    color: #333;
+    font-size: 12px;
+}
+
+.sing-in{
+    box-sizing: content-box;
+    width: 120px;
+    padding: 10px;
+    background-color: #8a33fd;
+    color: #fff;
+    outline: none;
+    border: transparent;
+    border-radius: 7px;
+}
