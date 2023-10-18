@@ -33,7 +33,7 @@ btnEl.addEventListener("click", () => {
     fetch(url)
     .then((res)=>res.json())
     .then(data=>{
-        // console.log(data[0])
+        console.log(data[0])
         // console.log(data[0].name.common)
         // console.log(data[0].flags.svg)
         // console.log(data[0].population)
@@ -58,4 +58,9 @@ btnEl.addEventListener("click", () => {
         `
 
     })
+
+   if (inputEl.value.trim() === '') {
+    result.innerHTML = `<p>Empty</p>`
+   }
+
 });
