@@ -1,18 +1,19 @@
-/* eslint-disable react/prop-types */
+import { useEffect, useState } from "react";
+import Count from "../count";
 
-import axios from "axios"
-
-const Button = (props) => {
-    let {setImage} = props
-    const generateImg = ()=>{
-        axios.get(`https://api.thecatapi.com/v1/images/search`)
-        .then(data=>setImage(data.data[0]))
-        }
+const Button = () => {
+  const [show, setShow] = useState(false);
+  useEffect(() => {
+    console.log("component rendering");
+  }, []);
   return (
-    <button onClick={()=>generateImg()}>
-        generate Image
+    <>
+      <button onClick={() => setShow((show) => !show)}>
+        {!show ? "open" : "close"}
       </button>
-  )
-}
+      {show && <Count />}
+    </>
+  );
+};
 
-export default Button
+export default Button;
